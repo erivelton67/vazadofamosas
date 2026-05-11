@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://connect.facebook.net">
+<link rel="dns-prefetch" href="https://metodotripe.shop">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Vazado das famosas</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+* { -webkit-tap-highlight-color: transparent; }
+
+:root {
+  --pink: #FF2D6B;
+  --pink-dark: #C4004F;
+  --pink-glow: rgba(255,45,107,0.25);
+  --purple-light: #A855F7;
+  --bg: #0A0008;
+  --bg2: #12000F;
+  --bg3: #1A0018;
+  --muted: rgba(255,255,255,0.55);
+  --border: rgba(255,45,107,0.2);
+  --gold: #FFD166;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 3.5rem 1.25rem;
+}
+
+.divider {
+  width: 50px; height: 2px;
+  background: linear-gradient(90deg, var(--pink), var(--purple-light));
+  border-radius: 100px;
+  margin: 0 auto 1rem;
+}
+
+.section-label {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pink);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.75rem, 6vw, 2.5rem);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+.section-title span { color: var(--pink); }
+
+.section-sub {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1.25rem 3.5rem;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 90% 55% at 50% 0%, rgba(123,47,190,0.4) 0%, transparent 70%),
+    radial-gradient(ellipse 70% 40% at 85% 90%, rgba(255,45,107,0.22) 0%, transparent 60%);
+}
+
+.hero-img {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: blur(0.6px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%),
+                      linear-gradient(to right,  transparent 0%, black 18%, black 82%, transparent 100%);
+  -webkit-mask-composite: destination-in;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%),
+              linear-gradient(to right,  transparent 0%, black 18%, black 82%, transparent 100%);
+  mask-composite: intersect;
+}
+
+.hero-img-1 { width: 33vw; height: 48vw; max-width: 145px; max-height: 210px; top: 2%; left: -1%; transform: rotate(-7deg); opacity: 0.92; }
+.hero-img-4 { width: 31vw; height: 44vw; max-width: 132px; max-height: 188px; bottom: 3%; left: 0%; transform: rotate(5deg); opacity: 0.85; }
+.hero-img-2 { width: 33vw; height: 48vw; max-width: 145px; max-height: 210px; top: 2%; right: -1%; transform: rotate(7deg); opacity: 0.92; }
+.hero-img-5 { width: 31vw; height: 44vw; max-width: 132px; max-height: 188px; bottom: 3%; right: 0%; transform: rotate(-5deg); opacity: 0.85; }
+.hero-img-3 { width: 27vw; height: 38vw; max-width: 115px; max-height: 162px; top: 50%; left: 50%; transform: translate(-125%, -50%) rotate(-3deg); opacity: 0.7; }
+.hero-img-6 { width: 27vw; height: 38vw; max-width: 115px; max-height: 162px; top: 50%; left: 50%; transform: translate(25%, -50%) rotate(3deg); opacity: 0.7; }
+.hero-img-7 { width: 28vw; height: 40vw; max-width: 118px; max-height: 170px; top: 26%; left: -1%; transform: rotate(4deg); opacity: 0.78; }
+.hero-img-8 { width: 28vw; height: 40vw; max-width: 118px; max-height: 170px; top: 26%; right: -1%; transform: rotate(-4deg); opacity: 0.78; }
+.hero-img-9 { width: 25vw; height: 36vw; max-width: 106px; max-height: 152px; bottom: 18%; left: 50%; transform: translateX(-50%) rotate(2deg); opacity: 0.65; }
+.hero-img-10 { width: 42vw; height: 58vw; max-width: 175px; max-height: 245px; top: 0%; left: 50%; transform: translateX(-50%) rotate(0deg); opacity: 1; z-index: 1; border-radius: 0 0 12px 12px; box-shadow: 0 8px 32px rgba(255,45,107,0.25); }
+
+.hero > :not(.hero-img) { position: relative; z-index: 2; }
+
+.hero-logo {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.hero-logo-top { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 4px; }
+
+.logo-club { font-family: 'DM Sans', sans-serif; font-size: clamp(0.8rem, 3vw, 1rem); font-weight: 600; letter-spacing: 0.35em; color: rgba(255,255,255,0.55); text-transform: uppercase; }
+
+.logo-badge18 { display: inline-flex; align-items: center; justify-content: center; background: var(--pink); color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(0.65rem, 2.5vw, 0.8rem); font-weight: 900; padding: 2px 8px; border-radius: 6px; letter-spacing: 0.05em; box-shadow: 0 0 14px rgba(255,45,107,0.6); }
+
+.hero-logo-main { font-family: 'Playfair Display', serif; font-size: clamp(2.6rem, 10vw, 5rem); font-weight: 900; letter-spacing: -0.02em; line-height: 0.92; background: linear-gradient(135deg, #fff 0%, #FFB3CC 50%, var(--purple-light) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-transform: uppercase; text-shadow: none; filter: drop-shadow(0 2px 16px rgba(0,0,0,1)); }
+
+.logo-trans { font-family: 'Playfair Display', serif; font-size: clamp(2.6rem, 10vw, 5rem); font-weight: 900; letter-spacing: 0.08em; background: linear-gradient(135deg, var(--pink) 0%, var(--purple-light) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.hero-logo-sub { font-family: 'DM Sans', sans-serif; font-size: clamp(0.65rem, 2.5vw, 0.8rem); font-weight: 600; letter-spacing: 0.45em; color: var(--pink); margin-top: 6px; text-transform: uppercase; opacity: 0.9; }
+
+/* ── HERO TEXT WRAP — legível sobre qualquer imagem ── */
+.hero-text-wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1.25rem 1.75rem;
+  border-radius: 20px;
+  background: rgba(6,0,10,0.70);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,45,107,0.15);
+  max-width: 360px;
+  margin-top: 1rem;
+  box-shadow: 0 0 60px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.9rem, 7.5vw, 3rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.9);
+}
+
+.hero h1 em { font-style: normal; color: var(--pink); }
+
+.btn-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--pink), var(--pink-dark));
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 28px var(--pink-glow), 0 4px 18px rgba(0,0,0,0.4);
+  transition: transform 0.18s;
+  width: 100%;
+  max-width: 340px;
+  letter-spacing: 0.03em;
+}
+.btn-cta:active { transform: scale(0.97); }
+
+/* ── VÍDEO ── */
+.video-section { padding: 1.5rem 0 2.5rem; }
+.video-section .section-label { padding: 0 1.25rem; }
+
+.vstrip-outer { overflow: hidden; position: relative; width: 100%; cursor: default; user-select: none; pointer-events: none; }
+.vstrip-outer::before, .vstrip-outer::after { content: ''; position: absolute; top: 0; bottom: 0; width: 55px; z-index: 2; pointer-events: none; }
+.vstrip-outer::before { left: 0; background: linear-gradient(to right, var(--bg) 0%, transparent 100%); }
+.vstrip-outer::after { right: 0; background: linear-gradient(to left, var(--bg) 0%, transparent 100%); }
+
+.vstrip-track { display: flex; gap: 10px; padding: 0 1.25rem; will-change: transform; }
+
+.vstrip-card { flex-shrink: 0; width: calc((100vw - 2.5rem - 20px) / 3); aspect-ratio: 9/16; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg3); position: relative; }
+
+.vstrip-card video { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+
+.vstrip-headline { font-family: 'Playfair Display', serif; font-size: clamp(1.3rem, 5.5vw, 2rem); font-weight: 700; text-align: center; line-height: 1.2; padding: 0 1.25rem; margin-bottom: 1rem; color: #fff; }
+.vstrip-headline span { color: var(--pink); }
+
+/* ── OVERLAY PERFIL NOS CARDS ── */
+.vstrip-card { position: relative; }
+
+.card-profile {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 3;
+  padding: 28px 8px 8px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-avatar {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid var(--pink);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--pink), var(--purple-light));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.card-name {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+
+.card-verified {
+  font-size: 0.55rem;
+  color: var(--pink);
+  flex-shrink: 0;
+}
+
+/* ── FAKE ÁREA DE MEMBROS ── */
+.members-mockup {
+  margin: 2rem 0;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,45,107,0.3);
+  box-shadow: 0 0 40px rgba(255,45,107,0.12), 0 20px 60px rgba(0,0,0,0.6);
+  background: #0e0012;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* barra de status fake */
+.mock-statusbar {
+  background: #0e0012;
+  padding: 8px 14px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  color: rgba(255,255,255,0.7);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.mock-statusbar-icons { display: flex; gap: 5px; align-items: center; }
+.mock-signal { font-size: 8px; }
+
+/* header do app */
+.mock-header {
+  background: rgba(255,45,107,0.08);
+  border-bottom: 1px solid rgba(255,45,107,0.15);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mock-header-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.85rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #fff, var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.mock-header-badge {
+  background: var(--pink);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+}
+.mock-header-notif {
+  font-size: 1rem;
+  position: relative;
+}
+.mock-notif-dot {
+  position: absolute;
+  top: -2px; right: -2px;
+  width: 7px; height: 7px;
+  background: var(--pink);
+  border-radius: 50%;
+  border: 1.5px solid #0e0012;
+}
+
+/* tabs */
+.mock-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: #0e0012;
+  padding: 0 14px;
+  gap: 18px;
+}
+.mock-tab {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 8px 0;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+.mock-tab.active {
+  color: var(--pink);
+  border-bottom-color: var(--pink);
+}
+
+/* grid de conteúdo */
+.mock-body { padding: 10px 10px 4px; background: #0e0012; }
+
+.mock-featured {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  aspect-ratio: 16/9;
+  background: #1a0018;
+}
+.mock-featured img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: brightness(0.85);
+}
+.mock-featured-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 20px 10px 8px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.mock-featured-label {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--pink);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.mock-featured-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+}
+.mock-play-btn {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--pink);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px;
+  box-shadow: 0 0 14px rgba(255,45,107,0.6);
+  flex-shrink: 0;
+}
+
+.mock-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+.mock-grid-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 9/13;
+  background: #1a0018;
+}
+.mock-grid-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: brightness(0.8);
+}
+.mock-grid-lock {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  backdrop-filter: blur(2px);
+}
+.mock-grid-name {
+  position: absolute;
+  bottom: 4px; left: 0; right: 0;
+  text-align: center;
+  font-size: 8px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+}
+
+/* counter bar */
+.mock-counter {
+  padding: 8px 12px;
+  background: rgba(255,45,107,0.06);
+  border-top: 1px solid rgba(255,45,107,0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mock-stat { text-align: center; }
+.mock-stat-num { font-size: 11px; font-weight: 700; color: var(--pink); font-family: 'Playfair Display', serif; }
+.mock-stat-label { font-size: 8px; color: rgba(255,255,255,0.4); letter-spacing: 0.05em; }
+
+/* bottom nav */
+.mock-bottomnav {
+  background: #0e0012;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0 10px;
+}
+.mock-nav-item { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 16px; }
+.mock-nav-label { font-size: 8px; color: rgba(255,255,255,0.3); }
+.mock-nav-item.active .mock-nav-label { color: var(--pink); }
+
+/* ── BENEFÍCIOS ── */
+.benefits-grid { display: flex; flex-direction: column; gap: 12px; margin-top: 2rem; }
+.benefit-card { background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,45,107,0.04)); border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; }
+.benefit-icon { font-size: 1.6rem; flex-shrink: 0; margin-top: 2px; }
+.benefit-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.25rem; }
+.benefit-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+
+/* ── DEPOIMENTOS ── */
+.testimonials-section { background: linear-gradient(180deg, transparent, rgba(123,47,190,0.07), transparent); }
+.testimonials-grid { display: flex; flex-direction: column; gap: 12px; margin-top: 2rem; }
+.testimonial-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 1.25rem; }
+.stars { color: var(--gold); font-size: 0.8rem; margin-bottom: 0.6rem; letter-spacing: 2px; }
+.testimonial-text { font-size: 0.875rem; color: rgba(255,255,255,0.75); line-height: 1.65; margin-bottom: 1rem; font-style: italic; }
+.testimonial-author { display: flex; align-items: center; gap: 10px; }
+.avatar { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, var(--pink), var(--purple-light)); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; flex-shrink: 0; }
+.author-name { font-size: 0.85rem; font-weight: 600; }
+.author-tag { font-size: 0.75rem; color: var(--muted); }
+.avatar-photo { background: none; overflow: hidden; padding: 0; }
+.avatar-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+
+/* ── FAQ ── */
+.faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); padding: 1.1rem 0; }
+.faq-question { font-size: 0.95rem; font-weight: 500; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; user-select: none; }
+.faq-icon { width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; color: var(--pink); transition: transform 0.3s; }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-answer { font-size: 0.85rem; color: var(--muted); line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.2s; }
+.faq-item.open .faq-answer { max-height: 300px; padding-top: 0.7rem; }
+
+/* ── OFERTA ── */
+#oferta { padding: 2rem 1.25rem 4rem; }
+.offer-card { background: linear-gradient(160deg, rgba(255,45,107,0.1) 0%, rgba(123,47,190,0.14) 50%, rgba(255,45,107,0.06) 100%); border: 1px solid rgba(255,45,107,0.4); border-radius: 24px; padding: 2.25rem 1.5rem; text-align: center; box-shadow: 0 0 60px rgba(255,45,107,0.1), inset 0 1px 0 rgba(255,255,255,0.06); }
+.offer-tag { display: inline-block; background: var(--pink); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 1.25rem; }
+.offer-title { font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; margin-bottom: 0.4rem; }
+.offer-desc { color: var(--muted); font-size: 0.875rem; margin-bottom: 1.25rem; }
+.price-old { font-size: 0.9rem; color: rgba(255,255,255,0.3); text-decoration: line-through; margin-bottom: 4px; }
+.price-main { font-family: 'Playfair Display', serif; font-size: 5.5rem; font-weight: 900; line-height: 1; margin-bottom: 6px; color: #fff; }
+.price-main sup { font-size: 1.8rem; color: var(--pink); vertical-align: super; }
+.price-note { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-bottom: 0; }
+.offer-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,45,107,0.35), transparent); margin: 1.5rem 0; }
+.checklist { list-style: none; text-align: left; margin-bottom: 1.75rem; display: flex; flex-direction: column; gap: 12px; }
+.checklist li { display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: rgba(255,255,255,0.9); line-height: 1.4; }
+.check-icon { width: 22px; height: 22px; border-radius: 50%; background: rgba(255,45,107,0.18); border: 1px solid rgba(255,45,107,0.55); display: flex; align-items: center; justify-content: center; font-size: 0.65rem; flex-shrink: 0; color: var(--pink); font-weight: 700; }
+.btn-cta-offer { font-size: 1.05rem; padding: 1.15rem 1.5rem; letter-spacing: 0.04em; box-shadow: 0 0 40px rgba(255,45,107,0.5), 0 6px 24px rgba(0,0,0,0.5); }
+.secure-note { margin-top: 1.25rem; font-size: 0.72rem; color: rgba(255,255,255,0.28); display: flex; align-items: center; justify-content: center; gap: 5px; flex-wrap: wrap; text-align: center; line-height: 1.8; }
+
+/* ── GARANTIA ── */
+.guarantee-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 18px; padding: 2rem 1.25rem; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; text-align: center; }
+.guarantee-badge { font-size: 3rem; }
+.guarantee-box h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; }
+.guarantee-box p { font-size: 0.875rem; color: var(--muted); line-height: 1.7; }
+
+/* ── FOOTER ── */
+footer { padding: 2rem 1.25rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.75rem; color: rgba(255,255,255,0.22); }
+footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
+
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.fade-in.visible { opacity: 1; transform: none; }
+
+/* ── RESPONSIVIDADE EXTRA ── */
+html { font-size: 16px; text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+img, video { max-width: 100%; height: auto; }
+button, a { touch-action: manipulation; }
+
+/* previne overflow horizontal em qualquer elemento */
+* { max-width: 100%; }
+.hero-img, .hero-img img { max-width: none; }
+
+/* melhorar performance de scroll */
+.vstrip-outer { -webkit-overflow-scrolling: touch; }
+.carousel-track, .vstrip-track { transform: translateZ(0); backface-visibility: hidden; }
+
+/* safe area iPhone X+ */
+.hero { padding-top: max(5rem, env(safe-area-inset-top, 5rem)); }
+footer { padding-bottom: max(2rem, env(safe-area-inset-bottom, 2rem)); }
+.btn-cta { padding-bottom: max(1rem, env(safe-area-inset-bottom, 1rem)); }
+
+/* telas muito pequenas (<360px) */
+@media (max-width: 360px) {
+  .hero h1 { font-size: 1.75rem; }
+  .hero-logo-main, .logo-trans { font-size: 2.2rem; }
+  .price-main { font-size: 4rem; }
+  .offer-card { padding: 1.5rem 1rem; }
+  .mock-grid { grid-template-columns: repeat(3, 1fr); gap: 4px; }
+}
+
+/* garantir que seções não ultrapassem viewport */
+section { max-width: 100vw; overflow-x: hidden; }
+.benefits-grid, .testimonials-grid { max-width: 100%; }
+.members-mockup { max-width: 100%; }
+</style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1664159611281548');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1664159611281548&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel -->
+</head>
+<body>
+
+<!-- 1 — HERO -->
+<section class="hero">
+  <div class="hero-img hero-img-1"><img src="https://metodotripe.shop/wp-content/uploads/2026/05/NaiN4A2x.jpg" alt=""></div>
+  <div class="hero-img hero-img-2"><img src="https://metodotripe.shop/wp-content/uploads/2026/05/uBb5wI2Y.jpeg" alt=""></div>
+  <div class="hero-img hero-img-3"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/242356.jpg" alt=""></div>
+  <div class="hero-img hero-img-4"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/13677692-t6-enh.webp" alt=""></div>
+  <div class="hero-img hero-img-5"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/693322_2.jpg" alt=""></div>
+  <div class="hero-img hero-img-6"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/57395064_044_2848.jpg" alt=""></div>
+  <div class="hero-img hero-img-7"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/photo_2026-04-20_00-33-25.jpg" alt=""></div>
+  <div class="hero-img hero-img-8"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/photo_2026-04-20_00-34-34.jpg" alt=""></div>
+  <div class="hero-img hero-img-9"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/travestis.jpg" alt=""></div>
+  <div class="hero-img hero-img-10"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/INnLRp0X.jpeg" alt=""></div>
+
+  <div class="hero-logo">
+    <div class="hero-logo-top">
+      <span class="logo-club">CLUB</span><span class="logo-badge18">+18</span>
+    </div>
+    <div class="hero-logo-main">MUNDINHO<br><span class="logo-trans">TRANS</span></div>
+    <div class="hero-logo-sub">✦ VIP ✦</div>
+  </div>
+
+  <div class="hero-text-wrap">
+    <h1>As gostosas mais pauzudas do Brasil <em>exclusivas</em> no seu celular</h1>
+    <a href="#oferta" class="btn-cta">QUERO ENTRAR AGORA →</a>
+  </div>
+</section>
+
+<!-- 2 — VÍDEO -->
+<section class="video-section fade-in">
+  <h2 class="vstrip-headline">Algumas das <span>pauzudas</span> do grupinho <span>VIP</span> 🔥</h2>
+  <p class="section-label">🎬 Prévia exclusiva</p>
+  <div class="vstrip-outer" id="vstrip">
+    <div class="vstrip-track" id="vstripTrack">
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/KnynyLHd_720p.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">VS</div>
+          <span class="card-name">Valentina S.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/5.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">MT</div>
+          <span class="card-name">Melissa T.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/4.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">BK</div>
+          <span class="card-name">Bruna K.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/3.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">YR</div>
+          <span class="card-name">Yasmin R.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/2.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">CX</div>
+          <span class="card-name">Camila X.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/1.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">LM</div>
+          <span class="card-name">Leticia M.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/Melhores-Gifs-Transexuais-Orgasmo-pagina-2.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">NV</div>
+          <span class="card-name">Natasha V.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/Melhores-Gifs-Transexuais-Orgasmo-pagina-2-2.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">SA</div>
+          <span class="card-name">Sofia A.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/Melhores-Gifs-Transexuais-Orgasmo-9.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">AP</div>
+          <span class="card-name">Amanda P.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/Melhores-Gifs-Transexuais-Orgasmo-8.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">VL</div>
+          <span class="card-name">Vitoria L.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/Melhores-Gifs-Transexuais-Orgasmo-6.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">GF</div>
+          <span class="card-name">Giovana F.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/Melhores-Gifs-Transexuais-Orgasmo-5.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">RD</div>
+          <span class="card-name">Rebeca D.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/Melhores-Gifs-Transexuais-Orgasmo-4.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">IC</div>
+          <span class="card-name">Isabela C.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/KnynyLHd_720p.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">VS</div>
+          <span class="card-name">Valentina S.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/5.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">MT</div>
+          <span class="card-name">Melissa T.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+      <div class="vstrip-card">
+        <video muted loop playsinline preload="none" data-src="https://metodotripe.shop/wp-content/uploads/2026/04/4.mp4"></video>
+        <div class="card-profile">
+          <div class="card-avatar">BK</div>
+          <span class="card-name">Bruna K.</span>
+          <span class="card-verified">✦</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 — O QUE RECEBE -->
+<section class="fade-in">
+  <div class="divider"></div>
+  <h2 class="section-title">O que você vai <span>receber</span></h2>
+  <p class="section-sub">Acesso imediato após o pagamento</p>
+
+  <!-- FAKE ÁREA DE MEMBROS -->
+  <div class="members-mockup">
+    <!-- status bar -->
+    <div class="mock-statusbar">
+      <span>23:41</span>
+      <div class="mock-statusbar-icons">
+        <span class="mock-signal">▲▲▲</span>
+        <span>WiFi</span>
+        <span>🔋</span>
+      </div>
+    </div>
+    <!-- header -->
+    <div class="mock-header">
+      <div>
+        <div class="mock-header-logo">Mundinho Trans</div>
+      </div>
+      <span class="mock-header-badge">VIP</span>
+      <div class="mock-header-notif">🔔<div class="mock-notif-dot"></div></div>
+    </div>
+    <!-- tabs -->
+    <div class="mock-tabs">
+      <div class="mock-tab active">Em destaque</div>
+      <div class="mock-tab">Novidades</div>
+      <div class="mock-tab">Ao vivo</div>
+    </div>
+    <!-- body -->
+    <div class="mock-body">
+      <!-- featured -->
+      <div class="mock-featured">
+        <img src="https://metodotripe.shop/wp-content/uploads/2026/04/INnLRp0X.jpeg" alt="">
+        <div class="mock-featured-overlay">
+          <div>
+            <div class="mock-featured-label">🔥 Em destaque</div>
+            <div class="mock-featured-name">Valentina S.</div>
+          </div>
+          <div class="mock-play-btn">▶</div>
+        </div>
+      </div>
+      <!-- grid -->
+      <div class="mock-grid">
+        <div class="mock-grid-item">
+          <img src="https://metodotripe.shop/wp-content/uploads/2026/04/242350.jpg" alt="">
+          <div class="mock-grid-name">Melissa T.</div>
+        </div>
+        <div class="mock-grid-item">
+          <img src="https://metodotripe.shop/wp-content/uploads/2026/04/242351.jpg" alt="">
+          <div class="mock-grid-name">Bruna K.</div>
+        </div>
+        <div class="mock-grid-item">
+          <img src="https://metodotripe.shop/wp-content/uploads/2026/04/242356.jpg" alt="">
+          <div class="mock-grid-name">Yasmin R.</div>
+        </div>
+        <div class="mock-grid-item">
+          <img src="https://metodotripe.shop/wp-content/uploads/2026/04/photo_2026-04-20_00-33-25.jpg" alt="">
+          <div class="mock-grid-name">Camila X.</div>
+        </div>
+        <div class="mock-grid-item">
+          <img src="https://metodotripe.shop/wp-content/uploads/2026/04/photo_2026-04-20_00-34-34.jpg" alt="">
+          <div class="mock-grid-name">Sofia A.</div>
+        </div>
+        <div class="mock-grid-item">
+          <img src="https://metodotripe.shop/wp-content/uploads/2026/04/travestis.jpg" alt="">
+          <div class="mock-grid-lock">🔒</div>
+          <div class="mock-grid-name">+247 vídeos</div>
+        </div>
+      </div>
+    </div>
+    <!-- counter -->
+    <div class="mock-counter">
+      <div class="mock-stat"><div class="mock-stat-num">3.247</div><div class="mock-stat-label">vídeos</div></div>
+      <div class="mock-stat"><div class="mock-stat-num">89</div><div class="mock-stat-label">online agora</div></div>
+      <div class="mock-stat"><div class="mock-stat-num">∞</div><div class="mock-stat-label">acesso</div></div>
+    </div>
+    <!-- bottom nav -->
+    <div class="mock-bottomnav">
+      <div class="mock-nav-item active"><span>🏠</span><span class="mock-nav-label" style="color:var(--pink)">Início</span></div>
+      <div class="mock-nav-item"><span>🔍</span><span class="mock-nav-label">Buscar</span></div>
+      <div class="mock-nav-item"><span>❤️</span><span class="mock-nav-label">Favoritos</span></div>
+      <div class="mock-nav-item"><span>💬</span><span class="mock-nav-label">Chat</span></div>
+      <div class="mock-nav-item"><span>👤</span><span class="mock-nav-label">Perfil</span></div>
+    </div>
+  </div>
+
+  <div class="benefits-grid">
+    <div class="benefit-card"><span class="benefit-icon">🎬</span><div><div class="benefit-title">+3.000 vídeos exclusivos</div><div class="benefit-desc">Grupo privado com um acervo gigante que cresce toda semana. Conteúdo que você não acha em lugar nenhum.</div></div></div>
+    <div class="benefit-card"><span class="benefit-icon">♾️</span><div><div class="benefit-title">Acesso vitalício — paga só uma vez</div><div class="benefit-desc">Sem mensalidade, sem renovação. Pagou uma vez, é seu para sempre. Simples assim.</div></div></div>
+    <div class="benefit-card"><span class="benefit-icon">📹</span><div><div class="benefit-title">7 chamadas de vídeo por mês</div><div class="benefit-desc">Encontros ao vivo com as modelos, direto no celular. Opcional — você escolhe quando e com quem.</div></div></div>
+    <div class="benefit-card"><span class="benefit-icon">🕵️</span><div><div class="benefit-title">Armazenamento oculto</div><div class="benefit-desc">Aplicativo invisível na tela inicial do seu celular. Ninguém vê, ninguém sabe. 100% discreto.</div></div></div>
+    <div class="benefit-card"><span class="benefit-icon">📶</span><div><div class="benefit-title">Assista sem internet</div><div class="benefit-desc">Salve os vídeos e curta offline quando e onde quiser, sem depender de sinal.</div></div></div>
+    <div class="benefit-card"><span class="benefit-icon">🔥</span><div><div class="benefit-title">Novidades toda semana</div><div class="benefit-desc">Conteúdo novo chegando toda semana. Você nunca vai ficar sem novidade quentinha.</div></div></div>
+    <div class="benefit-card"><span class="benefit-icon">💬</span><div><div class="benefit-title">Bate-papo com as modelos</div><div class="benefit-desc">Converse em tempo real com as pauzudas do grupo. Elas estão online e te esperando.</div></div></div>
+  </div>
+</section>
+
+<!-- 4 — DEPOIMENTOS -->
+<section class="testimonials-section fade-in">
+  <div class="divider"></div>
+  <h2 class="section-title">O que <span>dizem</span></h2>
+  <p class="section-sub">Membros reais do grupo</p>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Cara, esse grupo mudou minha vida. Conteúdo novo toda semana, as minas são demais. Todo dia dou uma voltinha aqui e não me arrependo nem um pouco."</p>
+      <div class="testimonial-author"><div class="avatar avatar-photo"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/dc1c19211dcd14aa6b32d0024cd4d4d1.jpg" alt=""></div><div><div class="author-name">Rafael M.</div><div class="author-tag">Membro VIP · há 4 meses</div></div></div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Só safada gostosa aqui dentro. Já tentei outros grupos mas esse é outro nível. Mais de 3 mil vídeos e eu ainda não vi tudo. Vale cada centavo."</p>
+      <div class="testimonial-author"><div class="avatar avatar-photo"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/d484e720c8f1fbab088693a7dbd60a21.jpg" alt=""></div><div><div class="author-name">Lucas S.</div><div class="author-tag">Membro VIP · há 2 meses</div></div></div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"O app oculto foi o que me convenceu. Ninguém sabe de nada e eu curto tranquilo. As chamadas de vídeo então… não preciso nem comentar. 🔥"</p>
+      <div class="testimonial-author"><div class="avatar avatar-photo"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/4132fea5d9d86a3e12be9f581259e96c.jpg" alt=""></div><div><div class="author-name">Felipe O.</div><div class="author-tag">Membro VIP · há 1 mês</div></div></div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Todo dia acesso e sempre tem coisa nova. Bate-papo com as minas é real, respondem mesmo. Nunca vi nada parecido. Recomendo demais."</p>
+      <div class="testimonial-author"><div class="avatar avatar-photo"><img src="https://metodotripe.shop/wp-content/uploads/2026/04/8b1f807b117da7cb859e131608c6da88.jpg" alt=""></div><div><div class="author-name">Gabriel C.</div><div class="author-tag">Membro VIP · há 3 meses</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 — OFERTA -->
+<section id="oferta" class="fade-in">
+  <div class="offer-card">
+    <span class="offer-tag">🔥 Oferta por tempo limitado</span>
+    <h2 class="offer-title">Club Mundinho Trans <span style="color:var(--pink)">VIP</span></h2>
+    <p class="offer-desc">Acesso completo e vitalício a tudo — paga uma vez só</p>
+    <div class="price-old">De R$ 97,00</div>
+    <div class="price-main"><sup>R$</sup>9,90</div>
+    <p class="price-note">Pagamento único · Acesso eterno · Sem mensalidade</p>
+    <div class="offer-divider"></div>
+    <ul class="checklist">
+      <li><span class="check-icon">✓</span> +3.000 vídeos exclusivos no grupo privado</li>
+      <li><span class="check-icon">✓</span> Acesso vitalício — paga uma vez e é seu para sempre</li>
+      <li><span class="check-icon">✓</span> 7 chamadas de vídeo por mês com as modelos (opcional)</li>
+      <li><span class="check-icon">✓</span> App oculto — invisível no seu celular</li>
+      <li><span class="check-icon">✓</span> Assista os vídeos sem internet</li>
+      <li><span class="check-icon">✓</span> Novos conteúdos toda semana</li>
+      <li><span class="check-icon">✓</span> Bate-papo ao vivo com as pauzudas</li>
+    </ul>
+    <a href="https://paylume.fans/c/grupo-vip-das-trans" class="btn-cta btn-cta-offer">QUERO ACESSO AGORA POR R$9,90→</a>
+    <div class="secure-note">🔒 Compra 100% segura · Discreta na fatura · Acesso imediato</div>
+  </div>
+</section>
+
+<!-- 8 — FAQ -->
+<section class="fade-in">
+  <div class="divider"></div>
+  <h2 class="section-title" style="margin-bottom:1.75rem;">Perguntas <span>frequentes</span></h2>
+  <div class="faq-item">
+    <div class="faq-question">Como acesso após o pagamento? <span class="faq-icon">+</span></div>
+    <div class="faq-answer">O acesso é imediato. Após confirmar o pagamento você recebe o link direto no WhatsApp ou e-mail.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">O pagamento é seguro? <span class="faq-icon">+</span></div>
+    <div class="faq-answer">Sim! Utilizamos plataformas de pagamento criptografadas e certificadas. Seus dados nunca passam por nós.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Vou ter acesso vitalício? <span class="faq-icon">+</span></div>
+    <div class="faq-answer">Sim! Você paga uma única vez e o acesso é seu para sempre. Sem mensalidade, sem surpresa.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Minha compra será discreta na fatura? <span class="faq-icon">+</span></div>
+    <div class="faq-answer">Sim! O nome na fatura é discreto e não identifica o conteúdo adquirido.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">As chamadas de vídeo são obrigatórias? <span class="faq-icon">+</span></div>
+    <div class="faq-answer">Não! As 7 chamadas mensais são totalmente opcionais. Você usa se quiser, quando quiser.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Mundinho Trans · Apenas para maiores de 18 anos</p>
+  <p style="margin-top:6px;"><a href="#">Privacidade</a> · <a href="#">Termos</a> · <a href="#">Suporte</a></p>
+</footer>
+
+<script>
+// ── carrrossel de vídeos ──
+(function() {
+  const track = document.getElementById('vstripTrack');
+  if (!track) return;
+
+  // lazy load com IntersectionObserver — só carrega quando visível
+  const lazyObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const vid = entry.target.querySelector('video[data-src]');
+      if (vid && !vid.src) {
+        vid.src = vid.dataset.src;
+        vid.load();
+        vid.play().catch(() => {});
+      }
+      lazyObs.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px 300px 0px 300px', threshold: 0 });
+
+  track.querySelectorAll('.vstrip-card').forEach(card => lazyObs.observe(card));
+
+  // scroll automático suave
+  const TOTAL_REAL = 13;
+  const GAP = 10;
+  const cardW = () => track.querySelector('.vstrip-card').offsetWidth + GAP;
+  let pos = 0;
+  let raf;
+
+  function autoScroll() {
+    pos += 0.45;
+    const loopAt = cardW() * TOTAL_REAL;
+    if (pos >= loopAt) pos -= loopAt;
+    track.style.transform = `translateX(-${pos}px)`;
+    raf = requestAnimationFrame(autoScroll);
+  }
+
+  // pausar quando fora da tela pra economizar bateria
+  const stripObs = new IntersectionObserver(([e]) => {
+    if (e.isIntersecting) { if (!raf) autoScroll(); }
+    else { cancelAnimationFrame(raf); raf = null; }
+  }, { threshold: 0 });
+  stripObs.observe(track);
+
+  autoScroll();
+})();
+
+// ── FAQ accordion ──
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('.faq-question').addEventListener('click', () => {
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  }, { passive: true });
+});
+
+// ── fade in on scroll ──
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      obs.unobserve(e.target); // para de observar após animar
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+// ── Meta Pixel: ViewContent na seção de oferta ──
+const ofertaEl = document.getElementById('oferta');
+if (ofertaEl && typeof fbq === 'function') {
+  const ofertaObs = new IntersectionObserver(([e]) => {
+    if (e.isIntersecting) {
+      fbq('track', 'ViewContent');
+      ofertaObs.disconnect();
+    }
+  }, { threshold: 0.5 });
+  ofertaObs.observe(ofertaEl);
+}
+
+// ── Meta Pixel: InitiateCheckout no clique do botão ──
+document.querySelectorAll('.btn-cta-offer').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (typeof fbq === 'function') fbq('track', 'InitiateCheckout');
+  }, { passive: true });
+});
+</script>
+</body>
+</html>
